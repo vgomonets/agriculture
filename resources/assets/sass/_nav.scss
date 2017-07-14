@@ -1,0 +1,21 @@
+// fix tabs
+a.nav-link {
+    padding: 0 !important;
+}
+.nav-item.active .nav-link {
+    border: 0;
+    border-left: 1px solid #d8e2e7;
+    border-right: 1px solid #d8e2e7;
+    color: #00a8ff;
+    background: #fff;
+
+    * {
+        color: #00a8ff;
+    }
+
+    .nav-link-in {
+        border: 0;
+        border-top: solid 4px #00a8ff;
+    }
+
+}

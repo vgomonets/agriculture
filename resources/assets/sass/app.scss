@@ -1,0 +1,110 @@
+@import "vendor/bower-asset/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "vendor/bower-asset/font-awesome/scss/font-awesome.scss";
+@import "vendor/bower-asset/notie/src/notie.scss";
+@import "_layout.scss";
+@import "_printer.scss";
+@import "_btn.scss";
+@import "_profile.scss";
+@import "_action-icon.scss";
+@import "_nav.scss";
+.select2-results__option{
+    color: #000 !important;
+}
+.select2-selection {
+    border: 0 !important;
+}
+.select2-selection__rendered {
+    height: 20px;
+    padding: 4px 4px 0 4px !important;
+}
+.fm-file-grid {
+    min-height: 400px;
+}
+.info-list {
+    overflow: hidden;
+}
+.files-manager-header-left a {
+    display: inline-block !important;
+    margin-top: 8px !important;
+}
+.calendar-page {
+    min-height: 100%;
+}
+.calendar-page-content {
+    // overflow-y: hidden;
+    //min-height: 100%;
+}
+.loader {
+    display: none;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+// .side-menu ul {
+//     display: none;
+// }
+// .side-menu ul > first {
+//     display: block !important;
+// }
+// .side-menu li.opened > ul {
+//     display: block;
+// }
+
+// все подпункты открыты
+// .side-menu .with-sub ul {
+//     display: block;
+// }
+
+
+.fixed-table-body {
+    height: auto !important;
+}
+
+.page-content{ 
+    height: 100%; 
+    box-sizing: 
+    border-box; 
+    position: relative;
+}
+
+.container-fluid {
+    height: 100%; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.box-typica {
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.tt-dataset {
+    font-size: 16px;
+    padding: 5px 0px; 
+}
+.tt-suggestion {
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.tt-suggestion:hover {
+    background: #eee;
+}
+
+.has-error .help-block a {
+    color: #a94442;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.has-warning .help-block a {
+    color: #8a6d3b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.has-success .help-block a {
+    color: #3c763d;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,112 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*",
+        "swiftmailer/swiftmailer": "^5.4",
+        "kartik-v/bootstrap-fileinput": "^4.3",
+        "fxp/composer-asset-plugin": "^1.2.0",
+        "bower-asset/jquery": "^3.1.1",
+        "bower-asset/bootstrap": "^3.3.7",
+        "bower-asset/bootstrap-table": "^1.11.0",
+        "phstc/jquery-dateformat": "^1.0",
+        "bower-asset/eonasdan-bootstrap-datetimepicker": "^4.14.30",
+        "bower-asset/font-awesome": "^4.7",
+        "bower-asset/bootstrap-sass": "^3.3",
+        "bower-asset/notie": "^3.9",
+        "bower-asset/bootbox.js": "^4.4",
+        "bower-asset/jquery-typeahead": "^2.7",
+        "bower-asset/select2": "^4.0",
+        "bower-asset/TableDnD": "^0.9.1",
+        "twitter/typeahead.js": "^0.11.1",
+        "igorescobar/jquery-mask-plugin": "^1.14",
+        "intervention/image": "^2.3"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "symfony/css-selector": "2.8.*|3.0.*",
+        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "alexmihcom/js-grid": "dev-master",
+        "alexmihcom/jquery-bootstrap-form-error": "dev-master",
+        "alexmihcom/jquery-form-object": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "package",
+            "url": "https://github.com/alexmihcom/jqueryFormObject",
+            "package": {
+                "name": "alexmihcom/jquery-form-object",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/alexmihcom/jqueryFormObject",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "alexmihcom/jquery-bootstrap-form-error",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/alexmihcom/jqueryBootstrapFormError",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "alexmihcom/js-grid",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/alexmihcom/jsGrid",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
+}
